@@ -35,6 +35,12 @@ class AddressBook
       end
     end
   end
+
+  def nuke
+    @address_book = []
+    puts "All entries have been disappeared!"
+  end
+
   def binary_search(name)
     lower = 0
     upper = entries.length - 1
